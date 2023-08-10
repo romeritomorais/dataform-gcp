@@ -1,10 +1,8 @@
 config {
-  type: "view",
+  type: "table",
   schema: "trusted",
-  description: "Cleaned version of stackoverflow.badges"
+  description: "Cleaned version of stackoverflow.badges",
+  tags: ["staging"]
 }
 
-select
-  *
-from
-  ${ref("badges_")}
+select * from ${ref(landing.LND_CADF_CONVITE)}

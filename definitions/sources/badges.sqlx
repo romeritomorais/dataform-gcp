@@ -1,6 +1,0 @@
-config {
-  type: "declaration",
-  database: "caninana-labs",
-  schema: "raw",
-  name: "external_table_csv"
-}
