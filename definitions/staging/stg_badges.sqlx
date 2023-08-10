@@ -1,0 +1,10 @@
+config {
+  type: "view",
+  schema: "trusted",
+  description: "Cleaned version of stackoverflow.badges"
+}
+
+select
+  *
+from
+  ${ref("badges")}
