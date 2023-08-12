@@ -1,0 +1,7 @@
+config {
+  type: "table",
+  schema: "trusted",
+  tags: ["staging"],
+}
+
+select distinct(rideable_type) as tipo from ${ref("trips")}

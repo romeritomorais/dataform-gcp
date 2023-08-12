@@ -1,0 +1,7 @@
+config {
+  type: "table",
+  schema: "trusted",
+  tags: ["staging"],
+}
+
+select started_at, ended_at from ${ref("trips")}
